@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lab3</title>
+</head>
+
+<body>
+  <form action="#">
+    <h2>Задание 1</h2>
+    <p>A : x <input type="text" size="4" id="Ax" />, y <input type="text" size="4" id="Ay" /></p>
+    <p>B : x <input type="text" size="4" id="Bx" />, y <input type="text" size="4" id="By" /></p>
+    <p>C : x <input type="text" size="4" id="Cx" />, y <input type="text" size="4" id="Cy" /></p>
+    <p>Площадь равна: <input type="text" size="4" id="resultTask1" onfocus="Funk1()"/></p>
+    Событие Focus возникает в момент, когда пользователь переходит к элементу формы с помощью клавиши <Таb> или щелчка мыши. 
+  </form>
+  <form action="#">
+    <h2>Задание 2</h2>
+    <p>A : x<input type="text" size="4" id="Ax2" />, y <input type="text" size="4" id="Ay2" /></p>
+    <input type="text" size="40" id="resultTask2" onselect="Funk2()" value="Расстояние до начала координат: "/>
+  </form>
+  <form action="#">
+    <h2>Задание 3</h2>
+    <p>Переменная 1: <input type="text" size="4" id="param1" />, Переменная 2: <input type="text" size="4" id="param2" onblur="Funk3()"/></p>
+    Событие "потеря фокуса" (Blur) происходит в тот момент, когда элемент формы теряет фокус
+  </form>
+  <script src="./main.js"></script>
+</body>
+
+</html>
