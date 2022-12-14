@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>лаб5</title>
+    <style>
+      .image__item {
+        width: 300px;
+      }
+
+      .images__button {
+        width: 120px;
+        height: 30px;
+        margin-bottom: 20px;
+      }
+
+      .images__radiobutton {
+        margin-bottom: 20px;
+      }
+      .image__heading {
+        margin: 0 0 10px 10px;
+      }
+
+      .images__wrapper {
+        display: flex;
+        justify-content: space-around;
+        width: 1000px;
+        margin-bottom: 20px;
+      }
+
+      .image-place {
+        width: 320px;
+        height: 320px;
+        border: 10px solid black;
+      }
+
+      .images__image-place {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 32px;
+        line-height: 24px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper-task">
+      <div class="wrapper-task__images images">
+        <h2 class="images__heading">
+          Выберете картинку, которую хотите поместить в поле ниже
+        </h2>
+        <div class="images__radiobutton">
+          <input
+            checked
+            type="radio"
+            name="img"
+            id="1img"
+            value="1"
+            class="images__index"
+          />
+          <label for="1img">Первая картинка</label>
+          <input
+            type="radio"
+            name="img"
+            id="2img"
+            value="2"
+            class="images__index"
+          />
+          <label for="2img">Вторая картинка</label>
+          <input
+            type="radio"
+            name="img"
+            id="3img"
+            value="3"
+            class="images__index"
+          />
+          <label for="3img">Третья картинка</label>
+        </div>
+        <button class="images__button">Вставить</button>
+        <div class="images__wrapper">
+          <div class="images__wrap image">
+            <h3 class="image__heading">Первая картинка</h3>
+            <img src="p1.gif" alt="Машина1" class="image__item" />
+          </div>
+          <div class="images__wrap image">
+            <h3 class="image__heading">Вторая картинка</h3>
+            <img src="p2.gif" alt="Машина2" class="image__item" />
+          </div>
+          <div class="image__wrap image">
+            <h3 class="image__heading">Третья картинка</h3>
+            <img src="p3.gif" alt="Машина3" class="image__item" />
+          </div>
+        </div>
+        <div class="images__image-place image-place">
+          <p class="image-place__discription">Место для картинки</p>
+        </div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+h5 {
+  text-align: center;
+  color: yellow;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  text-align: justify;
+  color: purple;
+  font-weight: bold;
+  font-size: "3em";
+}
+
+caption {
+  color: aqua;
+}
+
+table {
+  float: right;
+  font-size: 24px;
+  border: 3px solid black;
+}
+
+table tr td {
+  float: right;
+  font-size: 24px;
+  border: 3px solid black;
+  margin: 3px;
+}
+
+.navOtherPage {
+  font-size: large;
+  text-align: left;
+}

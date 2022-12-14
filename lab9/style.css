@@ -1,0 +1,79 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('./art-galereya2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: azure;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.nav-city {
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu-cities {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 24px;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.active {
+  color:darkred;
+}
+
+.slider-wrap {
+  width: 300px;
+  overflow: hidden;
+}
+
+img {
+  width: 300px;
+  cursor: pointer;
+  transition: transform 1s linear;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(6*100%);
+  background-color: white;
+  transition: transform 0.3s ease-in-out;
+}
+
+li {
+  margin-right: 10px;
+  padding-left: 40px;
+  background-image: url('./paint-brush-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+li:hover {
+  color: chocolate;
+}
+
+.active:hover {
+  color: rgb(137, 139, 0);
+}
+
+.wrep {
+  display: flex;
+}

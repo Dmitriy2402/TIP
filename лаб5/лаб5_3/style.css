@@ -1,0 +1,66 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  background-color: black;
+}
+
+.menu {
+  width: 30%;
+  height: 100px;
+  font-weight: 400;
+  font-size: 32px;
+  color: white;
+}
+
+.menu--position {
+  margin: 0 auto;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.list__item {
+  position: relative;
+  margin: 10px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: blue;
+}
+
+.list__item::before {
+  position: absolute;
+  left: calc(50% - 30px);
+  content: '';
+  border-style: solid;
+  border-width: 0 30px 30px 30px;
+  animation-duration: .3s;
+  animation-timing-function: ease;
+  border-color: transparent transparent blue;
+}
+
+.list__item--over::before {
+  top: -30px;
+  animation-name: anim1;
+}
+
+.list__item--out::before {
+  top: 0;
+  animation-name: anim2;
+}
+
+
+
+
+
